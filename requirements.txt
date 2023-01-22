@@ -2,3 +2,4 @@ streamlit
 requests
 numpy
 rdkit-pypi
+ipython
