@@ -29,7 +29,6 @@ def pipeline(output, human):
     x1, x2 = compare(mol1, mol2)
     return mol1, mol2, x1, x2
 
-from sklearn.metrics import jaccard_score
 
 st.title("ChemPilot Demo")
 
