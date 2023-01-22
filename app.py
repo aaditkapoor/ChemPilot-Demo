@@ -93,10 +93,12 @@ if option and o_molecule and replace and replace_with:
     #st.info(con.decode("utf-8"))
     st.info(con['text'])
 
-
-    mol = Chem.MolFromSmiles(m1)
-    im2=Draw.MolToImage(mol)
-    st.image(im2)
+    try:
+        mol = Chem.MolFromSmiles(m1)
+        im2=Draw.MolToImage(mol)
+        st.image(im2)
+    except:
+        pass
 
     #st.info(f"Model output: {response.text}")
     #st.info(f"Similarity: {sim}")
