@@ -45,7 +45,7 @@ option = st.selectbox(
 st.info(models[option])
 
 o_molecule = st.text_input(
-        "Enter original molecule 👇",value='CCC(=O)N(C1CCN(CC1)CCC2=CC=CC=C2)C3=CC=CC=C3Nc1nc(SC2c3ccccc3-c3ccccc32)n[nH]1')
+        "Enter original molecule 👇",value='CCC(=O)N(C1CCN(CC1)CCC2=CC=CC=C2)C3=CC=CC=C3Nc1nc(Sc3ccccc3-c3ccccc3)n[nH]1')
 
 mol = Chem.MolFromSmiles(o_molecule)
 im=Draw.MolToImage(mol)
